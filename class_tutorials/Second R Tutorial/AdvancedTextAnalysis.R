@@ -116,3 +116,24 @@ findThoughts(stmOutput, texts = stmData$meta$description, topics = seq(1:k), n =
 ###Exercise 2: Re-estimate the STM with country as a covariate for prevalence
 ###Compare topic prevalence in China versus Russia and Germany versus the Netherlands
 ###See STM Vignette for the syntax (pg. 11 and 17-18)
+
+set.seed(2021)
+stmOutput_prevalence <- stm::stm(stmData$documents, stmData$vocab, K = k, data = stmData$meta, prevalence =~ country,  init.type = "Spectral")
+
+plot.STM(stmOutput_prevalence, type = "summary", xlim = c(0.0, 1.0), n = 12)
+
+stmTopicCorr_prevalence <- topicCorr(stmOutput_prevalence)
+plot.topicCorr(stmTopicCorr_prevalence)
+
+#Estimate the effect of country on topic prevalence
+stmEffect_prevalence <- estimateEffect(formula = 1:k ~ country, stmobj = stmOutput_prevalence,
+                                       metadata = stmData$meta, uncertainty = "Global")
+plot(stmEffect_prevalence, covariate = "country", topics = c(3, 4), model = stmOutput_prevalence)
+
+#Compare topic prevalence in China and Russia
+plot(stmEffect_prevalence, covariate = "country", topics = c(3, 4), model = stmOutput_prevalence, method = "difference",
+     cov.value1 = "China", cov.value2 = "Russia")
+
+#Compare topic prevalence in Germany and the Netherlands
+plot(stmEffect_prevalence, covariate = "country", topics = c(1:4), model = stmOutput_prevalence, method = "difference",
+     cov.value1 = "Germany", cov.value2 = "Netherlands")
