@@ -1,8 +1,8 @@
+# %%script false --no-raise-error
+# https://github.com/twintproject/twint/wiki/Configuration
 import twint
 
-# https://github.com/twintproject/twint/wiki/Configuration
-
-hashtags = [
+values_to_search = [
     "#ABPSouthampton",
     "#DP_World",
     "#GaPorts",
@@ -30,15 +30,19 @@ hashtags = [
     "#AutPortValencia"
 ]
 
+values_to_search = ['"port" AND "expansion"'] # both words should be included
+
+values_to_search = ['port'] # only port
+
+values_to_search = ['"harbour" OR "harbor"']
+
 c = twint.Config()
-c.Output = f"all_hashtags.csv"
-for hashtag in hashtags:
-    print("test")
-    c.Limit = 1000
+for value in values_to_search:
+    # c.Limit = 1000
+    file_name = f"./twitter_data_{value}.csv"
+    c.Output = file_name
     c.Store_csv = True
-    # c.Search = '"port" and "expansion"'
-    # c.Search = '"port"'
-    c.Search = hashtag
+    c.Search = value
     c.Filter_retweets = True
     c.Lang = "en"
     twint.run.Search(c)
