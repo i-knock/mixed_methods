@@ -1,0 +1,6 @@
+0:russian,ukraine,russia,pearl,war,mariupol,ukrainian,putin,city,attack
+1:usb,wind,mar,temp,charging,humidity,kpa,gusting,charger,knot
+2:utc,detected,threatintelligence,8022,attempt,~port,harbor,password,basketball,ssh
+3:like,pc,game,think,know,make,really,thing,want,na
+4:freight,apply,job,project,tool,opportunity,shipping,law,terminal,container
+5:harbour,sydney,bridge,crash,amp,beautiful,view,car,visit,morning
