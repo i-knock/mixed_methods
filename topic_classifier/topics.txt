@@ -1,5 +1,5 @@
-0:company,business,international,export,infrastructure,import,economy,profit,relation,revenue
-1:change,green,battery,earth,tree,nature,climate,environment,solar,usb
-2:city,work,school,job,training,mariupol,housing,education,tourist,environment
-3:russian,ukraine,russia,war,ukrainian,putin,ship,sea,country,~game
-4:harbor,~port,pearl,japan,mar,safe,tide,harbour,japanese,wwii
+0:company,business,economy,export,relation,import,infrastructure,~international,quay,spray
+1:change,nature,tree,earth,newport,yacht,battery,renewable,stealing,stolen
+2:city,work,school,job,tourist,environment,housing,training,labour,commute
+3:harbor,~game,free,~pc,cruise,sydney,~port,~joss,vividsydney,~really
+4:mystery,smashwords,suspense,today,safe,~local,~painting,~like,~downtown,~uk
