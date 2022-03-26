@@ -1,6 +1,10 @@
-0:russian,ukraine,russia,pearl,war,mariupol,ukrainian,putin,city,attack
-1:usb,wind,mar,temp,charging,humidity,kpa,gusting,charger,knot
-2:utc,detected,threatintelligence,8022,attempt,~port,harbor,password,basketball,ssh
-3:like,pc,game,think,know,make,really,thing,want,na
-4:freight,apply,job,project,tool,opportunity,shipping,law,terminal,container
-5:harbour,sydney,bridge,crash,amp,beautiful,view,car,visit,morning
+0:russian,ukraine,russia,mariupol,ukrainian,city,sea,putin,ship,force
+1:pc,game,usb,threatintelligence,8022,detected,utc,version,attempt,switch
+2:wind,mar,high,temp,basketball,humidity,tide,kpa,gusting,knot
+3:pearl,war,japan,attack,japanese,american,ww2,attacked,wwii,america
+4:mt,del,cbh,offer,service,pick,kwinana,aedt,flightaware,endthesiegeonyemen
+5:port,~harbor,~harbour,~sydney,~safe,~bridge,harcourt,~liyue,~sky,~crash
+6:oil,export,gas,shipping,supply,fuel,facility,amp,container,cargo
+7:like,think,really,thing,make,know,na,got,want,good
+8:outlet,surge,strip,closet,enrollment,poshmark,shopmycloset,protector,listing,appointment
+9:password,login,account,trying,league,wine,láirge,vale,allianz,kong
